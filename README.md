@@ -3,7 +3,7 @@
 #Story
 
 AS a user I'm in search of something to eat
-I WANT locall options based on my choice
+I WANT local options based on my choice
 SO THAT I can find a new place to try out
 
 Acceptance Criteria

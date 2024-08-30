@@ -1,0 +1,47 @@
+
+
+/* Global font styling*/
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+
+}
+
+.heading {
+    background-color: lightskyblue;
+}
+
+p {
+    text-align: center;
+}
+img {
+   
+    width: 450px;
+    height: 410px;
+    margin: 20px auto;
+    padding: 5px;
+    object-fit: cover;
+}
+.food {
+    display:inline;
+}
+
+#mexican {
+
+}
+
+#indian {
+
+}
+
+
+#italian {
+}
+
+#chinese {
+}
+
+
+
+

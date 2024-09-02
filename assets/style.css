@@ -1,47 +1,54 @@
-
-
 /* Global font styling*/
 * {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-    
-
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: lightskyblue;
 }
 
-.heading {
-    background-color: lightskyblue;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+label, input {
+  display: inline-block;
+  background-color: white;
+}
+
+button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px;
 }
 
 p {
-    text-align: center;
+  display: inline-block;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 30px;
 }
+
 img {
-   
-    width: 450px;
-    height: 410px;
-    margin: 20px auto;
-    padding: 5px;
-    object-fit: cover;
+  width: 450px;
+  height: 410px;
+  margin: 20px auto;
+  padding: 5px;
+  object-fit: cover;
 }
+
 .food {
-    display:inline;
+  display: block;
 }
 
-#mexican {
-
+.options {
+  background-color: lightgreen;
 }
 
-#indian {
+/* Empty media query for future use */
+@media screen and (max-width: 768px) {
 
 }
-
-
-#italian {
-}
-
-#chinese {
-}
-
-
-
-

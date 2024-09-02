@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find Me Dinner</title>
     <link rel="stylesheet" href="assets/style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header class="heading">
-        <h1>Find Me Dinner</h1>
-        <h2>What are you in the mood for?</h2>
+      <h1>Find Me Dinner</h1>
+      <h2>What are you in the mood for?</h2>
     </header>
     <main>
-        
-        <section>
+      <section>
         <div class="food" id="mexican">
-            
-                <img src="assets/Mexican.jpg" alt="Mexican" />
-            
-
+          <img src="assets/Mexican.jpg" alt="Mexican" />
+          <div>
+            <button>Mexican</button>
+          </div>
         </div>
         <div class="food" id="indian">
-            <img src="assets/Indian.jpg" alt="Indian" />
-            
-            <!-- Indian -->
+          <img src="assets/Indian.jpg" alt="Indian" />
+
+          <!-- Indian -->
         </div>
         <div class="food" id="italian">
-            <img src="assets/Italian.jpg" alt="Italian" />
-            
-            <!-- Italian -->
+          <img src="assets/Italian.jpg" alt="Italian" />
+
+          <!-- Italian -->
         </div>
         <div class="food" id="chinese">
-            <img src="assets/Chinese.jpg" alt="Chinese" />
-            
-            <!-- Chinese -->
+          <img src="assets/Chinese.jpg" alt="Chinese" />
+
+          <!-- Chinese -->
         </div>
-
-        </section>
-        <section class="options">
-            <p>Click above to..</p>
-            <p>Show me options within 10 miles of 06002</p>
-            <!-- this is where insert our options -->
-        </section>
+      </section>
+      <section class="options">
+        <div>
+          <label for="zipcode">Zip Code</label>
+          <input type="text" name="zipcode" id="zipcode" />
+        </div>
+        <p>Click above to see options within 10 miles!</p>
+        <!-- this is where insert our options -->
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>

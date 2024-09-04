@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find Me Dinner</title>
     <link rel="stylesheet" href="assets/style.css" />
-</head>
-<body>
-    <header>
-        <h1>Find Me Dinner</h1>
-        <h2>What are you in the mood for?</h2>
+    <!-- this is the instructions on how to get this to work https://bulma.io/documentation/start/installation/ -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    /> -->
+  </head>
+  <body>
+    <header class="heading">
+      <div><h1>Find Me Dinner</h1></div>
+      <div><h2>What are you in the mood for?</h2></div>
     </header>
     <main>
-        <section>
-        <div class="food" id="Mexican">
-            <!-- Mexican -->
+      <section>
+        <div class="food" id="mexican">
+          <img src="assets/Mexican.jpg" alt="Mexican" />
         </div>
-        <div class="food" id="Indian">
-            <!-- Indian -->
+        <div>
+          <button type="button" class="mex-btn">Mexican</button>
         </div>
-        <div class="food" id="Italian">
-            <!-- Italian -->
+        <div class="food" id="indian">
+          <img src="assets/Indian.jpg" alt="Indian" />
         </div>
-        <div class="food" id="Chinese">
-            <!-- Chinese -->
+        <div>
+          <button type="button" class="mex-btn">Indian</button>
         </div>
-        </section>
-        <section>
-            <!-- this is where insert our options -->
-        </section>
+        <div class="food" id="italian">
+          <img src="assets/Italian.jpg" alt="Italian" />
+        </div>
+        <div>
+          <button type="button" class="mex-btn">Italian</button>
+        </div>
+        <div class="food" id="chinese">
+          <img src="assets/Chinese.jpg" alt="Chinese" />
+        </div>
+        <div>
+          <button type="button" class="mex-btn">Chinese</button>
+        </div>
+      </section>
+      <section class="options">
+        <div>
+          <label for="zipcode">Zip Code</label>
+          <input type="text" name="zipcode" id="zipcode" />
+        </div>
+        <div>
+          <p>Click above to see options within 10 miles!</p>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>

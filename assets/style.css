@@ -1,3 +1,6 @@
+/* this is the instructions on how to get this to work https://bulma.io/documentation/start/installation/ */
+/* @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"; */
+
 /* Global font styling*/
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -20,16 +23,16 @@ input {
 }
 
 .mex-btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    margin-right: 1rem;
-    border: groove white;
-    background-color: white;
-    color: black;
-    position: relative;
-    transform: translate(-325%, 400%);
-    z-index: 1;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-right: 1rem;
+  border: groove white;
+  background-color: white;
+  color: black;
+  position: relative;
+  transform: translate(-325%, 400%);
+  z-index: 1;
 }
 
 .mex-btn:active {
@@ -77,15 +80,12 @@ img {
 }
 
 @media screen and (max-width: 992px) {
-body {
-}
-
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 768px) {

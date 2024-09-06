@@ -22,6 +22,8 @@ const restaurantsByCuisine = {
   ]
 };
 
+//const zipCode = document.getElementById('zipCode').value;
+
 function appendRestaurantsByCuisine(cuisineType) {
   let restaurantContainer = document.getElementById("restaurant-container");
   let restaurants = restaurantsByCuisine[cuisineType];

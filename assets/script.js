@@ -1,3 +1,26 @@
+//const restaurants = {
+  //italian: ['Restaurant A', 'Restaurant B', 'Restaurant C'],
+  //mexican: ['Restaurant X', 'Restaurant Y', 'Restaurant Z'],
+  //indian: ['Restaurant P', 'Restaurant Q', 'Restaurant R']
+//};
+
+//function findRestaurants() {
+ // const restaurantType = document.getElementById('restaurantType').value;
+  //const zipCode = document.getElementById('zipCode').value;
+  
+  //const filteredRestaurants = restaurants[restaurantType].map(restaurant => `${restaurant} - ${zipCode}`);
+  
+  //const restaurantList = document.getElementById('restaurantList');
+  //restaurantList.innerHTML = `<h2>Restaurants in ${restaurantType} near ${zipCode}:</h2>`;
+  
+  //filteredRestaurants.forEach(restaurant => {
+    //const p = document.createElement('p');
+    //p.textContent = restaurant;
+    //restaurantList.appendChild(p);
+  //});
+//}
+
+
 
 const restaurantsByCuisine = {
   "Italian": [

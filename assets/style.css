@@ -1,48 +1,33 @@
-/* this is the instructions on how to get this to work https://bulma.io/documentation/start/installation/ */
-/* @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"; */
-
-/* Global font styling*/
 * {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   background-color: lightskyblue;
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  /* height: 100vh; */
+input[type="radio"] {
+  display: none;
+}
+
+.btn-food {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Change button color when selected */
+input[type="radio"]:checked + button {
+  background-color: #0056b3;
 }
 
 label,
 input {
   display: inline-block;
   background-color: white;
-}
-
-.mex-btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  margin-right: 1rem;
-  border: groove white;
-  background-color: white;
-  color: black;
-  position: relative;
-  transform: translate(-325%, 400%);
-  z-index: 1;
-}
-
-.mex-btn:active {
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
-  background-color: lightgoldenrodyellow;
-}
-
-.mex-btn:hover {
-  border-style: inset;
-  background-color: lightgreen;
+  align-items: center;
 }
 
 p {
@@ -51,23 +36,7 @@ p {
   background-color: white;
   border-radius: 30px;
   padding: 25px;
-}
-
-div {
-  display: block;
-}
-
-img {
-  width: 450px;
-  height: 410px;
-  margin: 20px auto;
-  padding: 5px;
-  object-fit: cover;
-}
-
-.food {
-  position: relative;
-  display: inline-block;
+  align-items: center;
 }
 
 .options {
@@ -79,16 +48,7 @@ img {
   background-color: lightgreen;
 }
 
-@media screen and (max-width: 992px) {
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media (max-width: 991.98px) {
   header {
     display: flex;
     flex-wrap: wrap;

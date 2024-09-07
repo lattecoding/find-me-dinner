@@ -128,3 +128,7 @@ btnChinese.addEventListener('click', function () {
 
  
  });
+
+ const findResults = () => {
+  window.location.href = "../results.html"
+ }

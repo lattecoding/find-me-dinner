@@ -129,6 +129,8 @@ btnChinese.addEventListener('click', function () {
  
  });
 
- const findResults = () => {
+ const btnResults = document.querySelector("#resultsButton");
+
+ btnResults.addEventListener('click', function () {
   window.location.href = "../results.html"
- }
+})

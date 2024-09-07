@@ -3,7 +3,7 @@
 const restaurants = [
   {
   type: "Italian",
-  name: "Bertucci's"
+  name: "Bertuccis"
 },
   {
     type: "Italian",
@@ -51,8 +51,6 @@ const restaurants = [
   }
 ];
 
-const selectedRestType = "";
-
 
 //function findRestaurants() {
  // const restaurantType = document.getElementById('restaurantType').value;
@@ -75,12 +73,15 @@ const selectedRestType = "";
 //const zipCode = document.getElementById('zipCode').value;
 
 function appendRestaurantsByCuisine(cuisineType) {
- selectedRestType = cuisineType;
- console.log("selectedRestType:"+selectedRestType);
-  // let restaurantContainer = document.getElementById("restaurant-container");
-  // let restaurants = restaurantsByCuisine[cuisineType];
+ console.log('selectedRestType:'+cuisineType);
+ let filteredRestaurants = restaurants.filter(x => x.type === cuisineType);
+ //filteredRestaurants variable has all the restaurants filtered by selected cuisine type
 
-  // restaurants.forEach(restaurantName => {
+  console.log(filteredRestaurants);
+  // let restaurantContainer = document.getElementById("restaurant-container");
+
+
+  // filteredRestaurants.forEach(name => {
   //     let restaurantDiv = document.createElement("div");
   //     restaurantDiv.classList.add("restaurant");
 
@@ -95,30 +96,34 @@ function appendRestaurantsByCuisine(cuisineType) {
 
 
 
-const btnMexican = document.querySelector('#mexican');
+const btnMexican = document.querySelector("#mexican");
 btnMexican.addEventListener('click', function () {
+  console.log("Mexican button clicked");
 appendRestaurantsByCuisine("Mexican");
 });
 
-const btnIndian = document.querySelector('#indian');
+const btnIndian = document.querySelector("#indian");
 // // Listen for a click event on toggle switch
 btnIndian.addEventListener('click', function () {
+  console.log("Indian button clicked");
   appendRestaurantsByCuisine("Indian");
 
  
 });
 
-const btnItalian = document.querySelector('#italian');
+const btnItalian = document.querySelector("#italian");
 
  btnItalian.addEventListener('click', function () {
+  console.log("Italian button clicked");
   appendRestaurantsByCuisine("Italian");
 
  
 });
 
- const btnChinese = document.querySelector('#chinese');
+ const btnChinese = document.querySelector("#chinese");
 
 btnChinese.addEventListener('click', function () {
+  console.log("Chinese button clicked");
   appendRestaurantsByCuisine("Chinese");
 
  

@@ -6,6 +6,7 @@ input[type="radio"] {
   display: none;
 }
 
+h1
 .btn-food {
   display: block;
   width: 100%;
@@ -13,14 +14,14 @@ input[type="radio"] {
   font-size: 1.2rem;
   cursor: pointer;
   background: #08312e;
-  color: white;
+  /* color: white; */
   border: none;
   border-radius: 5px;
 }
 
 /* Change button color when selected */
 input[type="radio"]:checked + button {
-  background: #08312e;
+  background: #94b45c;
 }
 
 label,
@@ -34,18 +35,18 @@ p {
   display: inline-block;
   border: 1px solid white;
   background-color: white;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   padding: 10px;
   align-items: center;
 }
 
 .options {
-  background: #08312e
+  background: #94b45c;
   padding: 10px;
 }
 
 .options div {
-  background: #08312e;
+  background: #94b45c;
   padding: 10px;
 }
 

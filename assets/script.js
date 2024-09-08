@@ -1,15 +1,13 @@
-
-
 const restaurants = [
   {
-  type: "Italian",
-  name: "Angelo's Pizza",
-  addressline1: "2705 Main Street",
-  addressline2: "Glastonbury, CT",
-  zipcode: "06101",
-  website: "www.angelospizzact.com",
-  phone: "860-657-4401"
-},
+    type: "Italian",
+    name: "Angelo's Pizza",
+    addressline1: "2705 Main Street",
+    addressline2: "Glastonbury, CT",
+    zipcode: "06101",
+    website: "www.angelospizzact.com",
+    phone: "860-657-4401",
+  },
   {
     type: "Italian",
     name: "Krust Pizza Bourbon Bar",
@@ -17,8 +15,7 @@ const restaurants = [
     addressline2: "Middletown, CT",
     zipcode: "06101",
     website: "www.krustpizzabar.com",
-    phone: "860-358-9816"
-
+    phone: "860-358-9816",
   },
   {
     type: "Italian",
@@ -27,26 +24,25 @@ const restaurants = [
     addressline2: "West Hartford, CT",
     zipcode: "06101",
     website: "www.lunapizzawh.com",
-    phone: " 860-233-1625"
+    phone: " 860-233-1625",
   },
   {
     type: "Mexican",
     name: "Boxcar Cantinna",
-    addressline1:"44 Old Field Point Road",
+    addressline1: "44 Old Field Point Road",
     addressline2: "Greenwich, CT ",
     zipcode: "06101",
     website: "www.boxcarcantina.com",
-    phone: "203-323-3176"
+    phone: "203-323-3176",
   },
   {
     type: "Mexican",
     name: "Brasitas",
-    addressline1:  "954 E Main st.",
+    addressline1: "954 E Main st.",
     addressline2: "Stamford CT",
     zipcode: "06101",
     website: "www.Brasitas.com",
-    phone: "203-661-4774"
-
+    phone: "203-661-4774",
   },
   {
     type: "Mexican",
@@ -55,8 +51,8 @@ const restaurants = [
     addressline2: "Stamford CT",
     zipcode: "06101",
     website: "www.mexicue.com",
-    phone: "475-525-1700"
-  },  
+    phone: "475-525-1700",
+  },
   {
     type: "Indian",
     name: "Chutney",
@@ -64,16 +60,16 @@ const restaurants = [
     addressline2: "Stamford CT",
     zipcode: "06101",
     website: "www.chutney.com",
-    phone: "203-614-8374"
+    phone: "203-614-8374",
   },
   {
     type: "Indian",
     name: "Tawa",
     addressline1: "487 Glenbrook Rd,",
     addressline2: "Stamford, CT",
-     zipcode: "06101",
-     website: "www.thetawa.com",
-     phone: "203-359-8977"
+    zipcode: "06101",
+    website: "www.thetawa.com",
+    phone: "203-359-8977",
   },
   {
     type: "Indian",
@@ -82,7 +78,7 @@ const restaurants = [
     addressline2: "Westport CT",
     zipcode: "06101",
     website: "www.thenaan.com",
-    phone: "203-557-6667"
+    phone: "203-557-6667",
   },
   {
     type: "Chinese",
@@ -91,18 +87,16 @@ const restaurants = [
     addressline2: "Wilton CT",
     zipcode: "06101",
     website: "www.firstwok.com",
-    phone: "203-761-9886"
-   
+    phone: "203-761-9886",
   },
   {
     type: "Chinese",
     name: "Smoky Noodles",
     addressline1: "75 Pine st",
     addressline2: "New Canaan CT",
-     zipcode: "06101",
-     website: "www.smokynoodlesct.com",
-    phone: "203-920-1552"
-
+    zipcode: "06101",
+    website: "www.smokynoodlesct.com",
+    phone: "203-920-1552",
   },
   {
     type: "Chinese",
@@ -111,228 +105,47 @@ const restaurants = [
     addressline2: "Faifield CT",
     zipcode: "06101",
     website: "www.chinapalace.com",
-    phone: "203-762-7789"
- 
-
-  }
+    phone: "203-762-7789",
+  },
 ];
-
-
-//function findRestaurants() {
- // const restaurantType = document.getElementById('restaurantType').value;
-  //const zipCode = document.getElementById('zipCode').value;
-  
-  //const filteredRestaurants = restaurants[restaurantType].map(restaurant => `${restaurant} - ${zipCode}`);
-  
-  //const restaurantList = document.getElementById('restaurantList');
-  //restaurantList.innerHTML = `<h2>Restaurants in ${restaurantType} near ${zipCode}:</h2>`;
-  
-  //filteredRestaurants.forEach(restaurant => {
-    //const p = document.createElement('p');
-    //p.textContent = restaurant;
-    //restaurantList.appendChild(p);
-  //});
-//}
-
-
 
 //const zipCode = document.getElementById('zipCode').value;
 
-function appendRestaurantsByCuisine(cuisineType,enteredZip) { 
- let resultRestaurants = restaurants.filter(x => 
-  x.type === cuisineType 
-  && 
-  x.zipcode === enteredZip);
- //filteredRestaurants variable has all the restaurants filtered by selected cuisine type
+function appendRestaurantsByCuisine(cuisineType, enteredZip) {
+  let resultRestaurants = restaurants.filter(
+    (x) => x.type === cuisineType && x.zipcode === enteredZip
+  );
+  //filteredRestaurants variable has all the restaurants filtered by selected cuisine type
 
   console.log(resultRestaurants);
-  localStorage.setItem('result', JSON.stringify(resultRestaurants));
-  
- // Redirect to another page within the same website
-window.location.href = "/results.html";
+  localStorage.setItem("result", JSON.stringify(resultRestaurants));
 
-  // let restaurantContainer = document.getElementById("restaurant-container");
+  // Redirect to another page within the same website
+  window.location.href = "/results.html";
 
-
-  // filteredRestaurants.forEach(name => {
-  //     let restaurantDiv = document.createElement("div");
-  //     restaurantDiv.classList.add("restaurant");
-
-  //     let nameElement = document.createElement("h2");
-  //     nameElement.textContent = restaurantName;
-
-  //     restaurantDiv.appendChild(nameElement);
-
-  //     restaurantContainer.appendChild(restaurantDiv);
-  // });
 }
 
-
-
 const btnMexican = document.querySelector("#mexican");
-btnMexican.addEventListener('click', function () {
-  var enteredZip = document.getElementById("zipcode").value;   
-  appendRestaurantsByCuisine("Mexican",enteredZip);
+btnMexican.addEventListener("click", function () {
+  var enteredZip = document.getElementById("zipcode").value;
+  appendRestaurantsByCuisine("Mexican", enteredZip);
 });
 
 const btnIndian = document.querySelector("#indian");
 // // Listen for a click event on toggle switch
-btnIndian.addEventListener('click', function () {
-  var enteredZip = document.getElementById("zipcode").value;  
-  appendRestaurantsByCuisine("Indian",enteredZip); 
+btnIndian.addEventListener("click", function () {
+  var enteredZip = document.getElementById("zipcode").value;
+  appendRestaurantsByCuisine("Indian", enteredZip);
 });
 
 const btnItalian = document.querySelector("#italian");
- btnItalian.addEventListener('click', function () {
-  var enteredZip = document.getElementById("zipcode").value;   
-  appendRestaurantsByCuisine("Italian",enteredZip);
- 
+btnItalian.addEventListener("click", function () {
+  var enteredZip = document.getElementById("zipcode").value;
+  appendRestaurantsByCuisine("Italian", enteredZip);
 });
 
- const btnChinese = document.querySelector("#chinese");
-btnChinese.addEventListener('click', function () {
-  var enteredZip = document.getElementById("zipcode").value;   
-  appendRestaurantsByCuisine("Chinese",enteredZip); 
- });
-
-
-//  let filteredRestaurants = []
-
-//  const restaurants = [
-//    {
-//    type: "Italian",
-//    name: "Bertuccis"
-//  },
-//    {
-//      type: "Italian",
-//      name: "Olive Garden"
-//    },
-//    {
-//      type: "Italian",
-//      name: "Angelos"
-//    },
-//    {
-//      type: "Mexican",
-//      name: "Boxcar Cantinna"
-//    },
-//    {
-//      type: "Mexican",
-//      name: "Brasitas"
-//    },
-//    {
-//      type: "Mexican",
-//      name: "Mexicue"
-//    },  
-//    {
-//      type: "Indian",
-//      name: "Chutney"
-//    },
-//    {
-//      type: "Indian",
-//      name: "Tawa"
-//    },
-//    {
-//      type: "Indian",
-//      name: "Musafir"
-//    },
-//    {
-//      type: "Chinese",
-//      name: "First wok"
-//    },
-//    {
-//      type: "Chinese",
-//      name: "Smoky Noodles"
-//    },
-//    {
-//      type: "Chinese",
-//      name: "China Palace"
-//    }
-//  ];
- 
- 
-//  //function findRestaurants() {
-//   // const restaurantType = document.getElementById('restaurantType').value;
-//    //const zipCode = document.getElementById('zipCode').value;
-   
-//    //const filteredRestaurants = restaurants[restaurantType].map(restaurant => `${restaurant} - ${zipCode}`);
-   
-//    //const restaurantList = document.getElementById('restaurantList');
-//    //restaurantList.innerHTML = `<h2>Restaurants in ${restaurantType} near ${zipCode}:</h2>`;
-   
-//    //filteredRestaurants.forEach(restaurant => {
-//      //const p = document.createElement('p');
-//      //p.textContent = restaurant;
-//      //restaurantList.appendChild(p);
-//    //});
-//  //}
- 
- 
- 
-//  //const zipCode = document.getElementById('zipCode').value;
- 
-//  function appendRestaurantsByCuisine(cuisineType) {
-//   console.log('selectedRestType:'+cuisineType);
-//   filteredRestaurants = restaurants.filter(x => x.type === cuisineType);
-//   //filteredRestaurants variable has all the restaurants filtered by selected cuisine type
- 
-//    console.log(filteredRestaurants);
-//    // let restaurantContainer = document.getElementById("restaurant-container");
- 
- 
-//    // filteredRestaurants.forEach(name => {
-//    //     let restaurantDiv = document.createElement("div");
-//    //     restaurantDiv.classList.add("restaurant");
- 
-//    //     let nameElement = document.createElement("h2");
-//    //     nameElement.textContent = restaurantName;
- 
-//    //     restaurantDiv.appendChild(nameElement);
- 
-//    //     restaurantContainer.appendChild(restaurantDiv);
-//    // });
-//  }
- 
- 
- 
-//  const btnMexican = document.querySelector("#mexican");
-//  btnMexican.addEventListener('click', function () {
-//    console.log("Mexican button clicked");
-//  appendRestaurantsByCuisine("Mexican");
-//  });
- 
-//  const btnIndian = document.querySelector("#indian");
-//  // // Listen for a click event on toggle switch
-//  btnIndian.addEventListener('click', function () {
-//    console.log("Indian button clicked");
-//    appendRestaurantsByCuisine("Indian");
- 
-  
-//  });
- 
-//  const btnItalian = document.querySelector("#italian");
- 
-//   btnItalian.addEventListener('click', function () {
-//    console.log("Italian button clicked");
-//    appendRestaurantsByCuisine("Italian");
- 
-  
-//  });
- 
-//   const btnChinese = document.querySelector("#chinese");
- 
-//  btnChinese.addEventListener('click', function () {
-//    console.log("Chinese button clicked");
-//    appendRestaurantsByCuisine("Chinese");
- 
-  
-//   });
- 
-//   const btnResults = document.querySelector("#resultsButton");
- 
-//   btnResults.addEventListener('click', function (event) {
-//    event.preventDefault();
-//    let params = ''
-//    for (let i = 0; i<filteredRestaurants.length;i++) {
-//      params = params+filteredRestaurants[i].name+','
-//    }
-//    window.location.href = "../results.html?restaurants="+params 
+const btnChinese = document.querySelector("#chinese");
+btnChinese.addEventListener("click", function () {
+  var enteredZip = document.getElementById("zipcode").value;
+  appendRestaurantsByCuisine("Chinese", enteredZip);
+});

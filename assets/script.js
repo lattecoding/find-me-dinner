@@ -131,7 +131,8 @@ btnChinese.addEventListener('click', function () {
 
  const btnResults = document.querySelector("#resultsButton");
 
- btnResults.addEventListener('click', function () {
+ btnResults.addEventListener('click', function (event) {
+  event.preventDefault();
   let params = ''
   for (let i = 0; i<filteredRestaurants.length;i++) {
     params = params+filteredRestaurants[i].name+','

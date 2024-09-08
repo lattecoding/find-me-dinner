@@ -1,5 +1,5 @@
 * {
-  background-color: lightskyblue;
+  background: #d9d9d9;
 }
 
 input[type="radio"] {
@@ -12,7 +12,7 @@ input[type="radio"] {
   padding: 10px;
   font-size: 1.2rem;
   cursor: pointer;
-  background-color: #007bff;
+  background: #08312e;
   color: white;
   border: none;
   border-radius: 5px;
@@ -20,7 +20,7 @@ input[type="radio"] {
 
 /* Change button color when selected */
 input[type="radio"]:checked + button {
-  background-color: #0056b3;
+  background: #08312e;
 }
 
 label,
@@ -35,17 +35,18 @@ p {
   border: 1px solid white;
   background-color: white;
   border-radius: 30px;
-  padding: 25px;
+  padding: 10px;
   align-items: center;
 }
 
 .options {
-  background-color: lightgreen;
-  padding: 100px;
+  background: #08312e
+  padding: 10px;
 }
 
 .options div {
-  background-color: lightgreen;
+  background: #08312e;
+  padding: 10px;
 }
 
 @media (max-width: 991.98px) {

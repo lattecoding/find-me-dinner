@@ -19,7 +19,6 @@
       </div>
     </header>
     <main>
-
       <section class="d-flex flex-row" id="restaurantType">
         <div class="container" >
           <img src="assets/Mexican.jpg" class="object-fit-cover border rounded img-fluid" alt="Mexican" />
@@ -38,151 +37,17 @@
           <button type="button" id="chinese" class="btn btn-primary btn-lg">Chinese</button>
         </div>
       </section>
-       <section class="options">
+       <section class="options mt-5 text-center">
         <div>
           <label for="zipcode" class="lead">Enter Your Zip Code</label>
-          <input type="text" name="zipcode" id="zipcode" />
-          <p class="lead">Click above to see options within 10 miles!</p>
+          <input type="text" class="form-control mx-auto" style="max-width: 200px;" name="zipcode" id="zipcode" required/>
+          <p class="lead">Choose which type of food you'd like tonight</p>
         </div>
         <div>
           
         </div>
       </section>
-<!--
-      <form id="foodForm">
-        <section class="d-flex flex-wrap justify-content-around">
-          
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card text-center">
-              <img
-                src="assets/Mexican.jpg"
-                class="card-img-top border rounded img-fluid"
-                alt="Mexican"
-              />
-              <div class="card-body">
-                <input
-                  type="radio"
-                  name="cuisine"
-                  id="mexicanRadio"
-                  value="Mexican"
-                  required
-                />
-                <button
-                  type="button"
-                  class="btn btn-primary btn-lg btn-food"
-                  
-                >
-                  Mexican
-                </button>
-              </div>
-            </div>
-          </div>
-
-         
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card text-center">
-              <img
-                src="assets/Indian.jpg"
-                class="card-img-top border rounded img-fluid"
-                alt="Indian"
-              />
-              <div class="card-body">
-                <input
-                  type="radio"
-                  name="cuisine"
-                  id="indianRadio"
-                  value="Indian"
-                  required
-                />
-                <button
-                  type="button"
-                  class="btn btn-primary btn-lg btn-food">
-                  Indian
-                </button>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card text-center">
-              <img
-                src="assets/Italian.jpg"
-                class="card-img-top border rounded img-fluid"
-                alt="Italian"
-              />
-              <div class="card-body">
-                <input
-                  type="radio"
-                  name="cuisine"
-                  id="italianRadio"
-                  value="Italian"
-                  required
-                />
-                <button
-                  type="button"
-                  class="btn btn-primary btn-lg btn-food"
-                  
-                >
-                  Italian
-                </button>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card text-center">
-              <img
-                src="assets/Chinese.jpg"
-                class="card-img-top border rounded img-fluid"
-                alt="Chinese"
-              />
-              <div class="card-body">
-                <input
-                  type="radio"
-                  name="cuisine"
-                  id="chineseRadio"
-                  value="Chinese"
-                  required
-                />
-                <button
-                  type="button"
-                  class="btn btn-primary btn-lg btn-food"
-                  
-                >
-                  Chinese
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="options mt-5 text-center">
-          <div>
-            <label for="zipcode" class="lead">Enter Your Zip Code</label>
-            <input
-              type="text"
-              name="zipcode"
-              id="zipcode"
-              class="form-control mx-auto"
-              style="max-width: 200px"
-              required
-            />
-            <p class="lead mt-3">Click above to see options within 10 miles!</p>
-          </div>
-
-          
-          <div class="mt-4">
-            <button type="submit" class="btn btn-success btn-lg">
-              Find Restaurants
-            </button>
-          </div>
-        </section>
-      </form>
--->
     <footer></footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/script.js"></script>
   </body>

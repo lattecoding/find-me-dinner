@@ -1,5 +1,5 @@
 let resultRestaurants = JSON.parse(localStorage.getItem('result'));
-console.log("filtered result restauranta are" + JSON.stringify(resultRestaurants));
+console.log("filtered result restaurants are" + JSON.stringify(resultRestaurants));
 
 let restaurantContainer = document.getElementById("restaurant-container");
 

@@ -127,6 +127,7 @@ function appendRestaurantsByCuisine(cuisineType, enteredZip) {
 
 const btnMexican = document.querySelector("#mexican");
 btnMexican.addEventListener("click", function () {
+  // checkUserInput()
   var enteredZip = document.getElementById("zipcode").value;
   appendRestaurantsByCuisine("Mexican", enteredZip);
 });
@@ -134,18 +135,36 @@ btnMexican.addEventListener("click", function () {
 const btnIndian = document.querySelector("#indian");
 // // Listen for a click event on toggle switch
 btnIndian.addEventListener("click", function () {
+  // checkUserInput()
   var enteredZip = document.getElementById("zipcode").value;
   appendRestaurantsByCuisine("Indian", enteredZip);
 });
 
 const btnItalian = document.querySelector("#italian");
 btnItalian.addEventListener("click", function () {
+  // checkUserInput()
   var enteredZip = document.getElementById("zipcode").value;
   appendRestaurantsByCuisine("Italian", enteredZip);
 });
 
 const btnChinese = document.querySelector("#chinese");
 btnChinese.addEventListener("click", function () {
+  // checkUserInput()
   var enteredZip = document.getElementById("zipcode").value;
   appendRestaurantsByCuisine("Chinese", enteredZip);
 });
+
+// const myModal = document.getElementById('myModal')
+// const myInput = document.getElementById('myInput')
+
+// myModal.addEventListener('shown.bs.modal', () => {
+//   myInput.focus()
+// })
+
+// let checkUserInput = () => {
+//   let userInput = document.getElementById('zipcode').value;
+//   if(!userInput) {
+//     console.log('modal should show here')
+//   }
+  
+// }

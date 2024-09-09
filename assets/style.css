@@ -1,5 +1,5 @@
 * {
-  background: #d9d9d9;
+ background: #d9d9d9;
 }
 
 input[type="radio"] {
@@ -21,7 +21,7 @@ h1
 
 /* Change button color when selected */
 input[type="radio"]:checked + button {
-  background: #94b45c;
+  /* background: #94b45c; */
 }
 
 label,
@@ -31,16 +31,16 @@ input {
   align-items: center;
 }
 
-p {
+/* p {
   display: inline-block;
   border: 1px solid white;
   background-color: white;
   /* border-radius: 30px; */
-  padding: 10px;
+  /* padding: 10px;
   align-items: center;
-}
+} */ 
 
-.options {
+/* .options {
   background: #94b45c;
   padding: 10px;
 }
@@ -48,7 +48,7 @@ p {
 .options div {
   background: #94b45c;
   padding: 10px;
-}
+} */
 
 @media (max-width: 991.98px) {
   header {
@@ -58,3 +58,38 @@ p {
     align-items: center;
   }
 }
+
+/* // Get the button that triggers the modal
+const zipcode = document.getElementById('zipcode');
+
+// Get the modal element
+const modal = document.querySelector('.modal');
+
+// Add a click event listener to the button
+modalButton.addEventListener('click', function() {
+  // Show the modal by adding the 'show' class to it
+  modal.classList.add('show');
+  modal.style.display = 'block';
+
+  // Prevent scrolling behind the modal
+  document.body.style.overflow = 'hidden';
+});
+
+// Function to hide the modal when the close button is clicked
+function closeModal() {
+  modal.classList.remove('show');
+  modal.style.display = 'none'; */
+
+  /* // Restore scrolling
+  document.body.style.overflow = 'auto';
+} */
+/* 
+// Get the close button element
+const closeButton = document.querySelector('.modal .btn-close');
+
+// Add a click event listener to the close button
+closeButton.addEventListener('click', closeModal);
+In this code snippet:
+
+Replace 'modalButton' with the ID of the button that should trigger the modal.
+Replace '.modal' with the class of your modal element. */

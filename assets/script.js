@@ -121,7 +121,7 @@ function appendRestaurantsByCuisine(cuisineType, enteredZip) {
   localStorage.setItem("result", JSON.stringify(resultRestaurants));
 
   // Redirect to another page within the same website
-  window.location.href = "/results.html";
+  window.location.href = "results.html";
 
 }
 

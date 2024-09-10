@@ -12,6 +12,17 @@
 
   </head>
   <body>
+
+<!-- <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog" style="display: block;"></div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Please enter your zip code to see options near your</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div> -->
     <header class="heading">
       <div><h1>Find Me Dinner</h1></div>
       <div>
@@ -19,25 +30,48 @@
       </div>
     </header>
     <main>
+       <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Enter your zip code
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Where's my food!?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Enter your zip code to see your options
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
       <section class="d-flex flex-wrap justify-content-around" id="restaurantType">
         <div class="container col-12 col-md-6 col-lg-3 mb-4" >
           <img src="assets/Mexican.jpg" class="object-fit-cover border rounded img-fluid" alt="Mexican" />
-          <button id="mexican" type="button" class="btn btn-primary btn-lg">Mexican</button>
+          <button id="mexican" type="button" class="btn btn-warning btn-lg">Mexican</button>
         </div>
         <div class="container col-12 col-md-6 col-lg-3 mb-4" >
           <img src="assets/Indian.jpg" class="object-fit-cover border rounded img-fluid" alt="Indian" />
-          <button type="button" id="indian" class="btn btn-primary btn-lg">Indian</button>
+          <button type="button" id="indian" class="btn btn-warning btn-lg">Indian</button>
         </div>
         <div class="container col-12 col-md-6 col-lg-3 mb-4" >
           <img src="assets/Italian.jpg" class="object-fit-cover border rounded img-fluid" alt="Italian" />
-          <button type="button" id="italian" class="btn btn-primary btn-lg">Italian</button>
+          <button type="button" id="italian" class="btn btn-warning btn-lg">Italian</button>
         </div>
         <div class="container col-12 col-md-6 col-lg-3 mb-4" >
           <img src="assets/Chinese.jpg" class="object-fit-cover border rounded img-fluid" alt="Chinese" />
-          <button type="button" id="chinese" class="btn btn-primary btn-lg">Chinese</button>
+          <button type="button" id="chinese" class="btn btn-warning btn-lg">Chinese</button>
         </div>
       </section>
        <section class="options mt-5 text-center">
+       
         <div>
           <label for="zipcode" class="lead">Enter Your Zip Code</label>
           <input type="text" class="form-control mx-auto" style="max-width: 200px;" name="zipcode" id="zipcode" required/>
